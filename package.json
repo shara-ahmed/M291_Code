@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve-win": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+    "serve-mac": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve",
     "build": "vue-cli-service build",
     "schoolserver": "node 07a_StateMgmt/01_Intro/server/server.js"
   },
